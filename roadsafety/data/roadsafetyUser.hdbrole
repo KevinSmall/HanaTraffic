@@ -1,0 +1,4 @@
+role roadsafety.data::roadsafetyUser {
+		catalog schema "ROAD": SELECT;
+	    application privilege: roadsafety::Basic;
+}

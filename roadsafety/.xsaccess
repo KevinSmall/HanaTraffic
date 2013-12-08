@@ -1,0 +1,11 @@
+{
+    "exposed":true,
+    "authentication":[
+        {
+            "method":"LogonTicket"
+        },
+        {
+            "method":"Basic"
+        }
+    ]
+}

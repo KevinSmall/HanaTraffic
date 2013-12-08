@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Road Traffic Accidents</title>
+
+        <!-- SAPUI5 and its bootstrap -->
+		<script src="/sap/ui5/1/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_mvi">
+		// add this for desktop use data-sap-ui-xx-fakeOS = "ios"
+		</script>
+
+        <!-- Google Maps -->
+        <script src="http://maps.googleapis.com/maps/api/js?key=<yourApiKey>&sensor=false&libraries=visualization">
+	    </script>
+
+        <!-- Globals for this app -->
+	    <script src="roadsafetymap/RTA_Common.js">
+	    </script>
+	     <script src="roadsafetymap/MAP_Common.js">
+	    </script>
+
+	    <!-- Startup -->
+		<script>
+		sap.ui.localResources("roadsafetymap");
+		// First view
+		sap.ui.xmlview("RTA_AppView", "roadsafetymap.RTA_App").placeAt("content");
+		// All other initialization will be done by the RTA_App controller
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

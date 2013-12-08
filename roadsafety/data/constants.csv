@@ -1,0 +1,177 @@
+ACC_RCLASS,1,E,Motorway
+ACC_RCLASS,2,E,A(M)
+ACC_RCLASS,3,E,A class
+ACC_RCLASS,4,E,B class
+ACC_RCLASS,5,E,C class
+ACC_RCLASS,6,E,Unclassified
+ACC_LIGHT,1,E,Daylight - lights present
+ACC_LIGHT,2,E,Daylight - no lighting
+ACC_LIGHT,3,E,Daylight - lighting unknown
+ACC_LIGHT,4,E,Darkness - lights lit
+ACC_LIGHT,5,E,Darkness - lights unlit
+ACC_LIGHT,6,E,Darkness - no lighting
+ACC_LIGHT,7,E,Darkness - lighting unknown
+ACC_POLICE,1,E,Metropolitan Police
+ACC_POLICE,3,E,Cumbria
+ACC_POLICE,4,E,Lancashire
+ACC_POLICE,5,E,Merseyside
+ACC_POLICE,6,E,Greater Manchester
+ACC_POLICE,7,E,Cheshire
+ACC_POLICE,10,E,Northumbria
+ACC_POLICE,11,E,Durham
+ACC_POLICE,12,E,North Yorkshire
+ACC_POLICE,13,E,West Yorkshire
+ACC_POLICE,14,E,South Yorkshire
+ACC_POLICE,16,E,Humberside
+ACC_POLICE,17,E,Cleveland
+ACC_POLICE,20,E,West Midlands
+ACC_POLICE,21,E,Staffordshire
+ACC_POLICE,22,E,West Mercia
+ACC_POLICE,23,E,Warwickshire
+ACC_POLICE,30,E,Derbyshire
+ACC_POLICE,31,E,Nottinghamshire
+ACC_POLICE,32,E,Lincolnshire
+ACC_POLICE,33,E,Leicestershire
+ACC_POLICE,34,E,Northamptonshire
+ACC_POLICE,35,E,Cambridgeshire
+ACC_POLICE,36,E,Norfolk
+ACC_POLICE,37,E,Suffolk
+ACC_POLICE,40,E,Bedfordshire
+ACC_POLICE,41,E,Hertfordshire
+ACC_POLICE,42,E,Essex
+ACC_POLICE,43,E,Thames Valley
+ACC_POLICE,44,E,Hampshire
+ACC_POLICE,45,E,Surrey
+ACC_POLICE,46,E,Kent
+ACC_POLICE,47,E,Sussex
+ACC_POLICE,48,E,City of London
+ACC_POLICE,50,E,Devon and Cornwall
+ACC_POLICE,52,E,Avon and Somerset
+ACC_POLICE,53,E,Gloucestershire
+ACC_POLICE,54,E,Wiltshire
+ACC_POLICE,55,E,Dorset
+ACC_POLICE,60,E,North Wales
+ACC_POLICE,61,E,Gwent
+ACC_POLICE,62,E,South Wales
+ACC_POLICE,63,E,Dyfed-Powys
+ACC_POLICE,91,E,Northern
+ACC_POLICE,92,E,Grampian
+ACC_POLICE,93,E,Tayside
+ACC_POLICE,94,E,Fife
+ACC_POLICE,95,E,Lothian and Borders
+ACC_POLICE,96,E,Central
+ACC_POLICE,97,E,Strathclyde
+ACC_POLICE,98,E,Dumfries and Galloway
+ACC_WEATHER,1,E,Fine no high winds
+ACC_WEATHER,2,E,Raining no high winds
+ACC_WEATHER,3,E,Snowing no high winds
+ACC_WEATHER,4,E,Fine + high winds
+ACC_WEATHER,5,E,Raining + high winds
+ACC_WEATHER,6,E,Snowing + high winds
+ACC_WEATHER,7,E,Fog or mist
+ACC_WEATHER,8,E,Other
+ACC_WEATHER,9,E,Unknown
+ACC_SURFACE,1,E,Dry
+ACC_SURFACE,2,E,Wet or damp
+ACC_SURFACE,3,E,Snow
+ACC_SURFACE,4,E,Frost or ice
+ACC_SURFACE,5,E,Flood over 3cm. deep
+ACC_SPECIAL,0,E,None
+ACC_SPECIAL,1,E,Auto traffic signal - out
+ACC_SPECIAL,2,E,Auto signal part defective
+ACC_SPECIAL,3,E,Road signs defective or obscured
+ACC_SPECIAL,4,E,Road works
+ACC_SPECIAL,5,E,Road surface defective
+ACC_SPECIAL,6,E,Oil or diesel
+ACC_SPECIAL,7,E,Mud
+ACC_HAZARD,0,E,None
+ACC_HAZARD,1,E,Vehicle load on road
+ACC_HAZARD,2,E,Other object on road
+ACC_HAZARD,3,E,Previous accident
+ACC_HAZARD,6,E,Pedestrian in carriageway =- not injured
+ACC_HAZARD,7,E,Any animal in carriageway (except ridden horse)
+ACC_DAYOFWEEK,1,E,Sunday
+ACC_DAYOFWEEK,2,E,Monday
+ACC_DAYOFWEEK,3,E,Tuesday
+ACC_DAYOFWEEK,4,E,Wednesday
+ACC_DAYOFWEEK,5,E,Thursday
+ACC_DAYOFWEEK,6,E,Friday
+ACC_DAYOFWEEK,7,E,Saturday
+ACC_ROADTYPE,1,E,Roundabout
+ACC_ROADTYPE,2,E,One way street
+ACC_ROADTYPE,3,E,Dual carriageway
+ACC_ROADTYPE,6,E,Single carriageway
+ACC_ROADTYPE,7,E,Slip road
+ACC_ROADTYPE,9,E,Unknown
+VEH_VEHMANO,1,E,Reversing
+VEH_VEHMANO,2,E,Parked
+VEH_VEHMANO,3,E,Waiting to go - held up
+VEH_VEHMANO,4,E,Slowing or stopping
+VEH_VEHMANO,5,E,Moving off
+VEH_VEHMANO,6,E,U-turn
+VEH_VEHMANO,7,E,Turning left
+VEH_VEHMANO,8,E,Waiting to turn left
+VEH_VEHMANO,9,E,Turning right
+VEH_VEHMANO,10,E,Waiting to turn right
+VEH_VEHMANO,11,E,Changing lane to left
+VEH_VEHMANO,12,E,Changing lane to right
+VEH_VEHMANO,13,E,Overtaking moving veh. - offside
+VEH_VEHMANO,14,E,Overtaking static veh. - offside
+VEH_VEHMANO,15,E,Overtaking - nearside
+VEH_VEHMANO,16,E,Going ahead left-hand bend
+VEH_VEHMANO,17,E,Going ahead right-hand bend
+VEH_VEHMANO,18,E,Going ahead other
+VEH_VEHTOW,0,E,No tow/articulation
+VEH_VEHTOW,1,E,Articulated vehicle
+VEH_VEHTOW,2,E,Double or multiple trailer
+VEH_VEHTOW,3,E,Caravan
+VEH_VEHTOW,4,E,Single trailer
+VEH_VEHTOW,5,E,Other tow
+VEH_VEHTYPE,1,E,Pedal cycle
+VEH_VEHTYPE,2,E,Motor cycle 50cc and under
+VEH_VEHTYPE,3,E,Motor cycle 51cc - 125cc
+VEH_VEHTYPE,4,E,Motor cycle 126cc - 500cc
+VEH_VEHTYPE,5,E,Motor cycle over 500cc
+VEH_VEHTYPE,8,E,Taxi/Private hire car
+VEH_VEHTYPE,9,E,Car
+VEH_VEHTYPE,10,E,Minibus (8 - 16 passenger seats)
+VEH_VEHTYPE,11,E,Bus or coach (17 or more pass seats)
+VEH_VEHTYPE,14,E,Other motor vehicle
+VEH_VEHTYPE,15,E,Other non-motor vehicle
+VEH_VEHTYPE,16,E,Ridden horse
+VEH_VEHTYPE,17,E,Agricultural veh (incl diggers etc.)
+VEH_VEHTYPE,18,E,Tram
+VEH_VEHTYPE,19,E,Goods 3.5 tonnes mgw or under
+VEH_VEHTYPE,20,E,Goods over 3.5t. and under 7.5t.
+VEH_VEHTYPE,21,E,Goods 7.5 tonnes mgw and over
+VEH_VEHTYPE,103,E,Scooter (pre 1999)
+VEH_VEHTYPE,104,E,Motor cycle (pre 1999)
+VEH_VEHTYPE,105,E,Combination (pre 1999)
+VEH_VEHTYPE,106,E,Motor cycle over 125 cc (1999-2004)
+VEH_VEHTYPE,108,E,Taxi (excluding private hire cars)(pre 2005)
+VEH_VEHTYPE,109,E,Car (including private hire cars)(pre 2005)
+VEH_VEHTYPE,110,E,Minibus/Motor caravan (pre 1999)
+VEH_VEHTYPE,113,E,Goods over 3.5 tonnes (pre 1999)
+VEH_DRIVEGENDER,1,E,Male
+VEH_DRIVEGENDER,2,E,Female
+VEH_DRIVEGENDER,3,E,Not traced
+VEH_HITANDRUN,0,E,Other
+VEH_HITANDRUN,1,E,Hit and run
+VEH_HITANDRUN,2,E,Non-stop vehicle not hit
+VEH_FOREIGN,0,E,Not foreign registered vehicle
+VEH_FOREIGN,1,E,Foreign reg'd veh - left hand drive
+VEH_FOREIGN,2,E,Foreign reg'd veh - right hand drive
+VEH_FOREIGN,3,E,Foreign reg'd veh - two wheeler
+VEH_PURPOSE,1,E,Journey as part of work
+VEH_PURPOSE,2,E,Commuting to/from work
+VEH_PURPOSE,3,E,Taking pupil to/from school
+VEH_PURPOSE,4,E,Pupil riding to/from school
+VEH_PURPOSE,5,E,Other/Not known
+CAS_CASCLASS,1,E,Driver or rider
+CAS_CASCLASS,2,E,Passenger
+CAS_CASCLASS,3,E,Pedestrian
+CAS_CASGENDER,1,E,Male
+CAS_CASGENDER,2,E,Female
+CAS_CASSEV,1,E,Fatal
+CAS_CASSEV,2,E,Serious
+CAS_CASSEV,3,E,Slight

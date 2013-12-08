@@ -1,0 +1,7 @@
+service namespace "roadsafety"
+{ 
+   "roadsafety.models::AN_ACC_VEH_CAS" as "RTA"
+   key ("ACCREF", "ACCYEAR")
+   aggregates always
+   ;
+}

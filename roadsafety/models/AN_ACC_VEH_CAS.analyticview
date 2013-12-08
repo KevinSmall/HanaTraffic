@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cube:cube xmlns:Cube="http://www.sap.com/ndb/BiModelCube.ecore" schemaVersion="1.5" id="AN_ACC_VEH_CAS" defaultClient="$$client$$" defaultLanguage="$$language$$" hidden="false" visibility="reportingEnabled">
+  <descriptions defaultDescription="AN_ACC_VEH_CAS"/>
+  <localVariables>
+    <variable id="EastingVariable">
+      <descriptions defaultDescription="EastingVariable"/>
+      <variableProperties datatype="CHAR" defaultValue="" mandatory="false">
+        <valueDomain type="AttributeValue">
+          <attribute name="EASTING"/>
+        </valueDomain>
+        <selection multiLine="false" type="Interval"/>
+      </variableProperties>
+    </variable>
+    <variable id="NorthingVariable">
+      <descriptions defaultDescription="NorthingVariable"/>
+      <variableProperties datatype="CHAR" defaultValue="" mandatory="false">
+        <valueDomain type="AttributeValue">
+          <attribute name="NORTHING"/>
+        </valueDomain>
+        <selection multiLine="false" type="Interval"/>
+      </variableProperties>
+    </variable>
+    <variable id="LatitudeVariable">
+      <descriptions defaultDescription="LatitudeVariable"/>
+      <variableProperties datatype="CHAR" defaultValue="51.48414164" mandatory="false">
+        <valueDomain type="AttributeValue">
+          <attribute name="LATITUDE"/>
+        </valueDomain>
+        <selection multiLine="false" type="Interval"/>
+      </variableProperties>
+    </variable>
+    <variable id="LongitudeVariable">
+      <descriptions defaultDescription="LongitudeVariable"/>
+      <variableProperties datatype="CHAR" defaultValue="-0.16402169" mandatory="false">
+        <valueDomain type="AttributeValue">
+          <attribute name="LONGITUDE"/>
+        </valueDomain>
+        <selection multiLine="false" type="Interval"/>
+      </variableProperties>
+    </variable>
+  </localVariables>
+  <privateMeasureGroup id="MeasureGroup">
+    <attributes>
+      <attribute id="ACCREF">
+        <descriptions defaultDescription="ACCREF"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ACCREF"/>
+      </attribute>
+      <attribute id="ACCYEAR">
+        <descriptions defaultDescription="ACCYEAR"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ACCYEAR"/>
+      </attribute>
+      <attribute id="SEVERITY">
+        <descriptions defaultDescription="SEVERITY"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="SEVERITY"/>
+      </attribute>
+      <attribute id="DAY">
+        <descriptions defaultDescription="DAY"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="DAY"/>
+      </attribute>
+      <attribute id="MONTH">
+        <descriptions defaultDescription="MONTH"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="MONTH"/>
+      </attribute>
+      <attribute id="HOUR">
+        <descriptions defaultDescription="HOUR"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="HOUR"/>
+      </attribute>
+      <attribute id="MINUTE">
+        <descriptions defaultDescription="MINUTE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="MINUTE"/>
+      </attribute>
+      <attribute id="EASTING">
+        <descriptions defaultDescription="EASTING"/>
+        <localVariable>#EastingVariable</localVariable>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="EASTING"/>
+      </attribute>
+      <attribute id="NORTHING">
+        <descriptions defaultDescription="NORTHING"/>
+        <localVariable>#NorthingVariable</localVariable>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="NORTHING"/>
+      </attribute>
+      <attribute id="VEHREF">
+        <descriptions defaultDescription="VEHREF"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="VEHREF"/>
+      </attribute>
+      <attribute id="FOREIGN">
+        <descriptions defaultDescription="FOREIGN"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="FOREIGN"/>
+      </attribute>
+      <attribute id="DRIVEGENDER">
+        <descriptions defaultDescription="DRIVEGENDER"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="DRIVEGENDER"/>
+      </attribute>
+      <attribute id="DRIVEAGE">
+        <descriptions defaultDescription="DRIVEAGE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="DRIVEAGE"/>
+      </attribute>
+      <attribute id="CASREF">
+        <descriptions defaultDescription="CASREF"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas" columnName="CASREF"/>
+      </attribute>
+      <attribute id="CASCLASS">
+        <descriptions defaultDescription="CASCLASS"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas" columnName="CASCLASS"/>
+      </attribute>
+      <attribute id="CASGENDER">
+        <descriptions defaultDescription="CASGENDER"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas" columnName="CASGENDER"/>
+      </attribute>
+      <attribute id="CASAGE">
+        <descriptions defaultDescription="CASAGE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas" columnName="CASAGE"/>
+      </attribute>
+      <attribute id="CASSEV">
+        <descriptions defaultDescription="CASSEV"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas" columnName="CASSEV"/>
+      </attribute>
+      <attribute id="LATITUDE">
+        <descriptions defaultDescription="LATITUDE"/>
+        <localVariable>#LatitudeVariable</localVariable>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="LATITUDE"/>
+      </attribute>
+      <attribute id="LONGITUDE">
+        <descriptions defaultDescription="LONGITUDE"/>
+        <localVariable>#LongitudeVariable</localVariable>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="LONGITUDE"/>
+      </attribute>
+      <attribute id="POLICEFORCE">
+        <descriptions defaultDescription="POLICEFORCE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="POLICEFORCE"/>
+      </attribute>
+      <attribute id="WEATHER">
+        <descriptions defaultDescription="WEATHER"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="WEATHER"/>
+      </attribute>
+      <attribute id="LIGHT">
+        <descriptions defaultDescription="LIGHT"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="LIGHT"/>
+      </attribute>
+      <attribute id="ROAD1CLASS">
+        <descriptions defaultDescription="ROAD1CLASS"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ROAD1CLASS"/>
+      </attribute>
+      <attribute id="HAZARD">
+        <descriptions defaultDescription="HAZARD"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="HAZARD"/>
+      </attribute>
+      <attribute id="ROAD1TYPE">
+        <descriptions defaultDescription="ROAD1TYPE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ROAD1TYPE"/>
+      </attribute>
+      <attribute id="SPECIAL">
+        <descriptions defaultDescription="SPECIAL"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="SPECIAL"/>
+      </attribute>
+      <attribute id="SURFACE">
+        <descriptions defaultDescription="SURFACE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="SURFACE"/>
+      </attribute>
+      <attribute id="DAYOFWEEK">
+        <descriptions defaultDescription="DAYOFWEEK"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="DAYOFWEEK"/>
+      </attribute>
+      <attribute id="VEHTOW">
+        <descriptions defaultDescription="VEHTOW"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="VEHTOW"/>
+      </attribute>
+      <attribute id="VEHTYPE">
+        <descriptions defaultDescription="VEHTYPE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="VEHTYPE"/>
+      </attribute>
+      <attribute id="HITANDRUN">
+        <descriptions defaultDescription="HITANDRUN"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="HITANDRUN"/>
+      </attribute>
+      <attribute id="PURPOSE">
+        <descriptions defaultDescription="PURPOSE"/>
+        <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh" columnName="PURPOSE"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies>
+        <tableProxy centralTable="true">
+          <table schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc"/>
+        </tableProxy>
+        <tableProxy>
+          <table schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh"/>
+        </tableProxy>
+        <tableProxy>
+          <table schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas"/>
+        </tableProxy>
+      </tableProxies>
+      <joins>
+        <join>
+          <leftTable schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc"/>
+          <rightTable schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh"/>
+          <leftColumns>
+            <columnName>ACCYEAR</columnName>
+            <columnName>ACCREF</columnName>
+          </leftColumns>
+          <rightColumns>
+            <columnName>ACCYEAR</columnName>
+            <columnName>ACCREF</columnName>
+          </rightColumns>
+          <properties joinOperator="Equal" joinType="leftOuter"/>
+        </join>
+        <join>
+          <leftTable schemaName="ROAD" columnObjectName="roadsafety.data::Road.Veh"/>
+          <rightTable schemaName="ROAD" columnObjectName="roadsafety.data::Road.Cas"/>
+          <leftColumns>
+            <columnName>ACCYEAR</columnName>
+            <columnName>ACCREF</columnName>
+            <columnName>VEHREF</columnName>
+          </leftColumns>
+          <rightColumns>
+            <columnName>ACCYEAR</columnName>
+            <columnName>ACCREF</columnName>
+            <columnName>VEHREF</columnName>
+          </rightColumns>
+          <properties joinOperator="Equal" joinType="leftOuter"/>
+        </join>
+      </joins>
+      <layout>
+        <shapes>
+          <shape modelObjectName="roadsafety.data::Road.Acc" modelObjectNameSpace="ROAD" modelObjectType="catalog">
+            <upperLeftCorner x="70" y="30"/>
+          </shape>
+          <shape modelObjectName="roadsafety.data::Road.Veh" modelObjectNameSpace="ROAD" modelObjectType="catalog">
+            <upperLeftCorner x="324" y="89"/>
+          </shape>
+          <shape modelObjectName="roadsafety.data::Road.Cas" modelObjectNameSpace="ROAD" modelObjectType="catalog">
+            <upperLeftCorner x="590" y="52"/>
+          </shape>
+        </shapes>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures>
+      <measure id="VEHCOUNT" aggregationType="sum" measureType="simple">
+        <descriptions defaultDescription="VEHCOUNT"/>
+        <measureMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="VEHCOUNT"/>
+      </measure>
+      <measure id="CASCOUNT" aggregationType="sum" measureType="simple">
+        <descriptions defaultDescription="CASCOUNT"/>
+        <measureMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="CASCOUNT"/>
+      </measure>
+    </baseMeasures>
+    <calculatedMeasures>
+      <measure id="RECORDCOUNT" hidden="false" aggregationType="sum" measureType="simple" calculateBeforeAggregation="true" datatype="INTEGER">
+        <descriptions defaultDescription="RECORDCOUNT"/>
+        <formula>1</formula>
+      </measure>
+    </calculatedMeasures>
+    <restrictedMeasures/>
+    <sharedDimensions>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_POLICE">
+        <attributes>
+          <attributeRef>#POLICEFORCE</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_POLICE_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_POLICE_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_WEATHER">
+        <attributes>
+          <attributeRef>#WEATHER</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_WEATHER_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_WEATHER_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_LIGHT">
+        <attributes>
+          <attributeRef>#LIGHT</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_LIGHT_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_LIGHT_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_ROADCLASS">
+        <attributes>
+          <attributeRef>#ROAD1CLASS</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_ROADCLASS_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_ROADCLASS_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_HAZARD">
+        <attributes>
+          <attributeRef>#HAZARD</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_HAZARD_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_HAZARD_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_ROADTYPE">
+        <attributes>
+          <attributeRef>#ROAD1TYPE</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_ROADTYPE_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_ROADTYPE_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_SPECIAL">
+        <attributes>
+          <attributeRef>#SPECIAL</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_SPECIAL_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_SPECIAL_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_SURFACE">
+        <attributes>
+          <attributeRef>#SURFACE</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_SURFACE_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_SURFACE_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_DAYOFWEEK">
+        <attributes>
+          <attributeRef>#DAYOFWEEK</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_DAYOFWEEK_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_DAYOFWEEK_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_VEHTOW">
+        <attributes>
+          <attributeRef>#VEHTOW</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_VEHTOW_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_VEHTOW_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_VEHTYPE">
+        <attributes>
+          <attributeRef>#VEHTYPE</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_VEHTYPE_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_VEHTYPE_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_HITANDRUN">
+        <attributes>
+          <attributeRef>#HITANDRUN</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_HITANDRUN_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_HITANDRUN_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+      <logicalJoin associatedObjectUri="/roadsafety.models/attributeviews/AT_PURPOSE">
+        <attributes>
+          <attributeRef>#PURPOSE</attributeRef>
+        </attributes>
+        <associatedAttributeNames>
+          <attributeName>FixedValue</attributeName>
+        </associatedAttributeNames>
+        <properties joinOperator="Equal" joinType="referential"/>
+        <associatedAttributeFeatures>
+          <attributeReference alias="AT_PURPOSE_FixedValue" attributeName="FixedValue"/>
+          <attributeReference alias="AT_PURPOSE_Description" attributeName="Description"/>
+        </associatedAttributeFeatures>
+      </logicalJoin>
+    </sharedDimensions>
+    <layout>
+      <shapes>
+        <shape modelObjectName="MEASURE_GROUP" modelObjectType="repository">
+          <upperLeftCorner x="341" y="96"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_POLICE.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="16"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_WEATHER.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="64"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_LIGHT.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="113"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_ROADCLASS.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="161"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_HAZARD.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="258"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_ROADTYPE.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="307"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_SPECIAL.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="355"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_SURFACE.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="210"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_DAYOFWEEK.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="404"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_VEHTOW.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="501"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_VEHTYPE.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="452"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_HITANDRUN.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="16" y="549"/>
+        </shape>
+        <shape modelObjectName="/roadsafety.models/attributeviews/AT_PURPOSE.attributeview" modelObjectType="repository">
+          <upperLeftCorner x="650" y="598"/>
+        </shape>
+      </shapes>
+    </layout>
+  </privateMeasureGroup>
+</Cube:cube>

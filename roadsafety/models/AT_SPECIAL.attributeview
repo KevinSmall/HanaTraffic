@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dimension:dimension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AccessControl="http://www.sap.com/ndb/SQLCoreModelAccessControl.ecore" xmlns:Dimension="http://www.sap.com/ndb/BiModelDimension.ecore" schemaVersion="1.2" id="AT_SPECIAL" defaultClient="$$client$$" defaultLanguage="$$language$$" visibility="internal" dimensionType="Standard">
+  <descriptions defaultDescription="AT_SPECIAL"/>
+  <attributes>
+    <attribute id="FixedValue">
+      <descriptions defaultDescription="Fixed Value"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::constants" columnName="FixedValue"/>
+    </attribute>
+    <attribute id="Description">
+      <descriptions defaultDescription="Short Description"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::constants" columnName="Description"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <privateDataFoundation>
+    <tableProxies>
+      <tableProxy>
+        <table schemaName="ROAD" columnObjectName="roadsafety.data::constants"/>
+        <columnFilter columnName="Language">
+          <valueFilter xsi:type="AccessControl:SingleValueFilter" including="true" value="E"/>
+        </columnFilter>
+        <columnFilter columnName="Domain">
+          <valueFilter xsi:type="AccessControl:SingleValueFilter" including="true" value="ACC_SPECIAL"/>
+        </columnFilter>
+      </tableProxy>
+    </tableProxies>
+    <joins/>
+    <layout>
+      <shapes>
+        <shape modelObjectName="roadsafety.data::constants" modelObjectNameSpace="ROAD" modelObjectType="catalog">
+          <upperLeftCorner x="70" y="30"/>
+        </shape>
+      </shapes>
+    </layout>
+  </privateDataFoundation>
+  <hierarchies/>
+</Dimension:dimension>

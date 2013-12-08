@@ -1,0 +1,9 @@
+import = [
+			{
+                table = "roadsafety.data::constants";
+                schema = "ROAD";
+                file = "roadsafety.data:constants.csv"; 
+                header = false;
+            }         
+            
+ ];

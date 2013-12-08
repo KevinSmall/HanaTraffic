@@ -1,0 +1,8 @@
+service namespace "roadsafety"
+{ 
+   "roadsafety.models::AN_ACC" as "getRTA_ACC_Minimal"
+   with ("ACCREF", "ACCYEAR", "LATITUDE", "LONGITUDE", "DAY", "MONTH", "HOUR", "MINUTE", "AT_DAYOFWEEK_Description", "AT_WEATHER_Description", "AT_LIGHT_Description", "AT_SURFACE_Description", "VEHCOUNT", "CASCOUNT")
+   key ("ACCREF", "ACCYEAR")   
+   aggregates always
+   ;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dimension:dimension xmlns:Dimension="http://www.sap.com/ndb/BiModelDimension.ecore" schemaVersion="1.2" id="AT_ACC" defaultClient="$$client$$" defaultLanguage="$$language$$" visibility="internal" dimensionType="Standard">
+  <descriptions defaultDescription="AT_ACC minimal lat lng information for heatmap calcs"/>
+  <attributes>
+    <attribute id="ACCYEAR">
+      <descriptions defaultDescription="ACCYEAR"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ACCYEAR"/>
+    </attribute>
+    <attribute id="ACCREF">
+      <descriptions defaultDescription="ACCREF"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="ACCREF"/>
+    </attribute>
+    <attribute id="LATITUDE">
+      <descriptions defaultDescription="LATITUDE"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="LATITUDE"/>
+    </attribute>
+    <attribute id="LONGITUDE">
+      <descriptions defaultDescription="LONGITUDE"/>
+      <keyMapping schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc" columnName="LONGITUDE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <privateDataFoundation>
+    <tableProxies>
+      <tableProxy>
+        <table schemaName="ROAD" columnObjectName="roadsafety.data::Road.Acc"/>
+      </tableProxy>
+    </tableProxies>
+    <joins/>
+    <layout>
+      <shapes>
+        <shape modelObjectName="roadsafety.data::Road.Acc" modelObjectNameSpace="ROAD" modelObjectType="catalog">
+          <upperLeftCorner x="70" y="30"/>
+        </shape>
+      </shapes>
+    </layout>
+  </privateDataFoundation>
+  <hierarchies/>
+</Dimension:dimension>

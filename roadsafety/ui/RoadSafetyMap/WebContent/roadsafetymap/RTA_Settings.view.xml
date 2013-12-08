@@ -1,0 +1,29 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="roadsafetymap.RTA_Settings" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="RTA_Settings" title="Map Settings">
+		<List>
+			<StandardListItem id="RTA_Set_Markers" title="Display Map with Markers"
+				description="Detailed markers at each location." type="Navigation"
+				tap="listItemTriggered">
+			</StandardListItem>
+			<StandardListItem id="RTA_Set_HeatMap" title="Display Heat Map"
+				description="High level heat map." type="Navigation" tap="listItemTriggered">
+			</StandardListItem>
+		</List>
+		<VBox>
+		<Label id="RTA_Set_Label" text="Maximum Heat Map Records to Retrieve:"></Label>
+		<Input id="RTA_Set_MaxRecs" type="Number" value="2000"></Input>
+		<Label id="RTA_Spacer_01" text="  "></Label>
+		<Label id="RTA_Set_Header_Label" text="Location to use:"></Label>
+		<RadioButton id="RTA_Set_RadBut1"
+		    text="Use Current Location" 
+			selected="true"></RadioButton>
+		<RadioButton id="RTA_Set_RadBut2"
+		    text="Use Other Location:" 
+			selected="false"></RadioButton>
+		<TextArea id="RTA_Set_LocText"
+		    rows = "1"
+		    placeholder = "enter e.g. London" liveChange="onLiveChange"></TextArea>		
+		</VBox>  
+	</Page>
+</core:View>

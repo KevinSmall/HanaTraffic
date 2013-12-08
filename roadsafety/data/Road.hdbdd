@@ -1,0 +1,99 @@
+/*
+According to documentation non key fields should default to nullable, but I was getting errors on import
+like this: SAP DBTech JDBC: [287]: cannot insert NULL or update to NULL: Not nullable "JUNCCONTROL" column
+so I had to explicitly make fields nullable.
+*/
+namespace roadsafety.data;
+@Schema: 'ROAD'
+context Road {		// <- table name starts ROAD
+
+  type t_accref : String(9);
+  type t_vehprefix : String(1);
+  type t_degrees : Decimal(12, 9);
+  
+  @Catalog.tableType: #COLUMN
+    Entity Acc {			// <- full table name will be Road.Acc
+		key accyear : Integer;
+		key accref : t_accref;
+		policeforce : Integer;
+		severity : Integer;
+		vehcount : Integer;
+		cascount : Integer;
+		day : Integer;
+		month : Integer;
+		dayofweek : Integer;
+		nullable hour : Integer;
+		nullable minute : Integer;
+		nullable localauth : Integer;
+		easting : Integer;
+		northing : Integer;
+		nullable road1class : Integer;
+		nullable road1num : Integer;
+		nullable road1type : Integer;
+		nullable speedlimit : Integer;
+		nullable juncdetail : Integer;
+		nullable junccontrol : Integer;
+		nullable road2class : Integer;
+		nullable road2num : Integer;
+		nullable pedcrosscon : Integer;
+		nullable pedcrossfac : Integer;
+		nullable light : Integer;
+		nullable weather : Integer;
+		nullable surface : Integer;
+		nullable special : Integer;
+		nullable hazard : Integer;
+		nullable policeatscene : Integer;
+		nullable latitude : t_degrees;
+		nullable longitude : t_degrees;
+    }; 
+    
+    @Catalog.tableType: #COLUMN
+    Entity Veh {			// <- full table name will be Road.Veh
+		key accyear : Integer;
+		key accref : t_accref;
+		key vehref : Integer;
+		nullable vehtype : Integer;
+		nullable vehtow : Integer;
+		nullable vehmano : Integer;
+		nullable compfrom : Integer;
+		nullable compto : Integer;
+		nullable locrestrict : Integer;
+		nullable skip2_9 : Integer;
+		nullable locjunct : Integer;
+		nullable skidover : Integer;
+		nullable hitobjon : Integer;
+		nullable vehleave : Integer;
+		nullable hitobjoff : Integer;
+		nullable vehprefix : t_vehprefix;
+		nullable impact1 : Integer;
+		nullable vehrefother : Integer;
+		nullable skip24 : Integer;
+		nullable skip25 : Integer;
+		nullable drivegender : Integer;
+		nullable driveage : Integer;
+		nullable hitandrun : Integer;
+		nullable foreign : Integer;
+		nullable purpose : Integer;
+	  }; 
+	  
+	  @Catalog.tableType: #COLUMN
+	  Entity Cas {			// <- full table name will be Road.Cas
+		key accyear : Integer;
+		key accref : t_accref;
+		key vehref : Integer;
+		key casref : Integer;
+		casclass : Integer;
+		nullable casgender : Integer;
+		nullable casage : Integer;
+		nullable cassev : Integer;
+		nullable pedloc : Integer;
+		nullable pedmove : Integer;
+		nullable peddir : Integer;
+		nullable pupil : Integer;
+		nullable carpass : Integer;
+		nullable buspass : Integer;
+		nullable castype : Integer;
+		nullable roadwork : Integer;
+	  }; 
+
+};

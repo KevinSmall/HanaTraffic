@@ -1,0 +1,6 @@
+role roadsafety.data::roadsafetyAdmin
+	extends role roadsafety.data::roadsafetyUser 
+{
+	catalog schema "ROAD": SELECT, INSERT, UPDATE, DELETE, DROP;
+	application privilege: roadsafety::Admin;	
+}
